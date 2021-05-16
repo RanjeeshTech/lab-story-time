@@ -14,8 +14,10 @@ let moreAboutHome = (address,distanceFromTown,hasNeighbours)=>{
 //Check if the data given is of the right type
 //parents = String, noOfSiblings = Number, isNuclearFamily = Boolean
 
+//moreAboutKaren() function with three arguments passed
 let moreAboutKaren = (parents,noOfSiblings,isNuclearFamily)=>{
     let concatenatedString = `${typeof(parents)}${typeof(noOfSiblings)}${typeof(isNuclearFamily)}`
+    //returns true if the concatenatedString is stringnumberboolean else returns false
     if(concatenatedString==="stringnumberboolean")
     return true
     else 
@@ -27,6 +29,7 @@ let moreAboutKaren = (parents,noOfSiblings,isNuclearFamily)=>{
 //Karen tells her friend's age and even writes it down
 //Check which one those is not a number (NaN) and return that value
 
+//doesFriendExist() function with two arguments passed
 let doesFriendExist = (ageInText,ageInNumber)=>{
     if(isNaN(ageInText)==true&&isNaN(ageInNumber)==false)
     return NaN   
@@ -45,7 +48,9 @@ let doesFriendExist = (ageInText,ageInNumber)=>{
 //Her friend divided the remaining sweets into 2 parts for each
 //How many sweets did her friend get to eat?
 
+//sweetTooth() function with four arguments passed
 let sweetTooth = (totalNoOfSweets,sweetsConsumedByKaren,sweetsConsumedInNMeters,metersToTravel)=>{
+    //Returns 0 is the concatenation of the four arguments types is numbernumbernumbernumber else returns no fruits for Karen's friend
     let concatenatedString = `${typeof(totalNoOfSweets)}${typeof(sweetsConsumedByKaren)}${typeof(sweetsConsumedInNMeters)}${typeof(metersToTravel)}`
     if(concatenatedString=="numbernumbernumbernumber"){
         return 0
@@ -59,7 +64,9 @@ let sweetTooth = (totalNoOfSweets,sweetsConsumedByKaren,sweetsConsumedInNMeters,
 //As Lily moves closer, it gets colder. She checks the temperature on her mobile
 //It only shows in fahrenheit. Convert the data to celsius and return it.
 
+//convertToCelsius() function with one argument passed
 let convertToCelsius = (fahrenheit)=>{
+    //returns technical error if the argument passed is a string or a object or undefined else returns celsius for the fahernheit given
     if(typeof fahrenheit=="string"||typeof fahrenheit=="object"||typeof fahrenheit=="undefined"){
         return "Technical Error!"     
     }
@@ -76,6 +83,7 @@ let convertToCelsius = (fahrenheit)=>{
 //4. Lock her daughter in her room
 //Given a value, return which of these above actions Lily would take
 
+//aDifficultChoice() function with one argument passed
 let aDifficultChoice = (choice)=>{
     if(choice==1){
         return "Take her daughter to a doctor"
